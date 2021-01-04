@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            list-style-type: none;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#" method="post">
+        <fieldset style="width: 200px;">
+            <legend>Information:</legend>
+            <ul>
+                <li <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="user_name" maxlength="50" required>
+                </li>
+                <li>
+                    <label for="mail">E-mail:</label><br>
+                    <input type="email" id="mail" name="user_email" required>
+                </li>
+                <li>
+                    <label for="website">Website:</label><br>
+                    <input type="url" id="website" name="user_website" required>
+                </li>
+                <form method="post" enctype="multipart/form-data">
+                    <label for="file">Choose a file</label><br>
+                    <input type="file" name="myImage" accept=".png, .jpg">
+                    <button type="submit">submit your information</button><br>
+                </form>
+            </ul>
+        </fieldset>
+</body>
+
+</html>
